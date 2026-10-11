@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sora: 'Sora', sans-serif;
+    --font-manrope: 'Manrope', sans-serif;
+
+    --color-navy: #10233F;
+    --color-champagne: #C5A46D;
+    --color-mist: #EDF2F7;
+    --color-slate: #34445B;
+    --color-charcoal: #202733;
+    --color-pale-blue: #F5F8FC;
+    --color-porcelain: #FFFFFF;
+  }
+
+  body {
+    font-family: var(--font-manrope);
+    background-color: var(--color-pale-blue);
+    color: var(--color-charcoal);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sora);
+  }
+}
+
+.font-sora {
+  font-family: var(--font-sora);
+}
+
+.font-manrope {
+  font-family: var(--font-manrope);
+}
+
+/* Custom scrollbar discipline */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F8FC;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A46D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10233F;
+}
+
+/* Focus ring accessibility */
+*:focus-visible {
+  outline: 2px solid #C5A46D;
+  outline-offset: 2px;
+}
